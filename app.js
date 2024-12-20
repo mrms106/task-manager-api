@@ -5,7 +5,7 @@ if(process.env.NODE_ENV !="production"){
 const express=require("express");
 const app= express()
 const connectDb=require("./db")
-
+const Task=require("./modules/tasks")
 
 // connected to the database
 connectDb(process.env.DB_URL)
