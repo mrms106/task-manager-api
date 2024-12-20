@@ -16,7 +16,7 @@ app.use(express.json())
 
 const corsOptions={
   origin:"*",
-  method:'POST,GET,DELETE'
+  method:'POST,GET,DELETE,PUT'
 }
 app.use(cors(corsOptions))
 

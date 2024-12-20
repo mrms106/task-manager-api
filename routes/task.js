@@ -2,14 +2,14 @@ const express=require("express")
 const router=express.Router()
 const taskController=require("../controllers/task")
 
-router.get("/alltasks",taskController.showTask);
+router.get("/tasks",taskController.showTask);
 
-router.get("/task/:id",taskController.singleTask);
+router.get("/tasks/:id",taskController.singleTask);
 
-router.post("/addtask",taskController.addTask);
+router.post("/tasks",taskController.addTask);
 
-router.post("/updatetask/:id",taskController.updateTask);
+router.put("/tasks/:id",taskController.updateTask);
 
-router.delete("/deletetask/:id",taskController.deleteTask);
+router.delete("/tasks/:id",taskController.deleteTask);
 
 module.exports=router;
